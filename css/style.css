@@ -3,6 +3,15 @@
   --title-color: #212121;
   --text-color: #757575;
   --main-color: #ffffff;
+  --background-color: rgba(0, 0, 0, 0.2);
+  --modal-button-color: #000000;
+  --background-hover-color: #188ce8;
+  --placeholder-color: color: rgba(117, 117, 117, 0.5);
+  --border-bottom-color:#ececec;
+  --specials-icon-color:#f5f4fa;
+  --socials-link-color: #afb1b8;
+  --footer-hero-background-color: #2f303a;
+  --overlay-color: rgba(33, 150, 243, 0.9);
 }
 
 /* 
@@ -62,7 +71,7 @@ modal
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--background-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -93,7 +102,7 @@ modal
   height: 30px;
   background-color: var(--main-color);
   border-radius: 50%;
-  color: #000000;
+  color: var(--modal-button-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   appearance: none;
   cursor: pointer;
@@ -144,7 +153,7 @@ modal
   position: absolute;
   width: 18px;
   height: 18px;
-  fill: #212121;
+  fill: var(--title-color);
   top: 50%;
   left: 12px;
   display: inline-block;
@@ -158,7 +167,7 @@ modal
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-color);
 }
 
 .modal__name,
@@ -168,7 +177,7 @@ modal
   font-size: 12px;
   line-height: 1.166;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--text-color);
 }
 
 .modal__input {
@@ -187,7 +196,7 @@ modal
   font-size: 12px;
   line-height: 1.166;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: var(--placeholder-color);
 }
 
 .modal__textarea {
@@ -201,7 +210,7 @@ modal
 
 .modal__input:hover,
 .modal__input:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--link-color);
 }
 
 .modal__input:hover + .modal__icon,
@@ -222,7 +231,7 @@ modal
 
 .modal__textarea:hover,
 .modal__textarea:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--link-color);
 }
 
 .modal__mail:focus-within {
@@ -249,7 +258,7 @@ modal
   width: 16px;
   height: 15px;
   border-radius: 2px;
-  outline: 2px solid #212121;
+  outline: 2px solid var(--title-color);
   outline-offset: -2px;
 }
 
@@ -295,7 +304,7 @@ modal
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color);
   padding-left: 10px;
 }
 
@@ -304,7 +313,7 @@ modal
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
-  color: #2196f3;
+  color: var(--link-color);
 }
 
 .modal__submit {
@@ -330,7 +339,7 @@ modal
 
 .modal__submit:hover,
 .modal__submit:focus {
-  background-color: #188ce8;
+  background-color: var(--background-hover-color);
 }
 
 /*==============
@@ -338,7 +347,7 @@ header
 =================*/
 
 header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-bottom-color);
 }
 
 header .container {
@@ -364,7 +373,7 @@ logo
   color: var(--link-color);
 }
 .logo__two {
-  color: #000000;
+  color: var(--modal-button-color);
 }
 
 /*============
@@ -479,7 +488,7 @@ fist section
 }
 
 .hero-section {
-  background-color: #2f303a;
+  background-color: var(--footer-hero-background-color);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -525,7 +534,7 @@ fist section
 }
 .hero-section__button:hover,
 .hero-section__button:focus {
-  background-color: #188ce8;
+  background-color: var(--background-hover-color);
 }
 
 /*
@@ -576,7 +585,7 @@ second section
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f5f4fa;
+  background-color: var(--specials-icon-color);
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -648,7 +657,7 @@ fourth section
 ===============
 */
 .team-section {
-  background-color: #f5f4fa;
+  background-color: var(--specials-icon-color);
 }
 .team-section__list {
   display: flex;
@@ -710,7 +719,7 @@ fourth section
   height: 44px;
   background-color: var(--main-color);
   border-radius: 50%;
-  color: #afb1b8;
+  color: var(--socials-link-color);
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -727,7 +736,7 @@ fourth section
 
 .socials__link:hover svg,
 .socials__link:focus svg {
-  color: #ffffff;
+  color: var(--main-color);
 }
 
 /*
@@ -749,11 +758,11 @@ fifth section
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--socials-link-color);
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  color: #afb1b8;
+  color: var(--socials-link-color);
 }
 
 .customers-section__item {
@@ -791,7 +800,7 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
-  background-color: #2f303a;
+  background-color: var(--footer-hero-background-color);
 }
 
 .info-block {
@@ -919,7 +928,7 @@ footer {
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--main-color);
   margin-bottom: 20px;
 }
 
@@ -934,8 +943,8 @@ footer {
   text-align: center;
   justify-content: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background: #2196f3;
+  color: var(--main-color);
+  background: var(--link-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
@@ -997,7 +1006,7 @@ PORTFOLIO
 }
 
 .projects__textbox {
-  background: #ffffff;
+  background: var(--main-color);
   box-sizing: border-box;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
@@ -1027,7 +1036,7 @@ PORTFOLIO
 }
 
 .projects__overlay-text {
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: var(--overlay-color);
 }
 
 .projects__overlay {
@@ -1040,7 +1049,7 @@ PORTFOLIO
 }
 
 .projects__overlay:hover .projects__overlay-text {
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: var(--overlay-color);
   transform: translateY(0);
   opacity: 1;
 }
@@ -1065,7 +1074,7 @@ PORTFOLIO
 }
 
 .project__button {
-  background: #f5f4fa;
+  background: var(--specials-icon-color);
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
