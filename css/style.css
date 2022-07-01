@@ -119,11 +119,9 @@ modal
   border-color: var(--link-color);
 }
 
-.button-close__icon{
+.button-close__icon {
   fill: currentColor;
 }
-
-
 
 .modal__name,
 .modal__tel,
@@ -154,8 +152,6 @@ modal
   cursor: pointer;
 }
 
-
-
 .modal__title {
   font-weight: 700;
   font-size: 20px;
@@ -164,7 +160,6 @@ modal
   letter-spacing: 0.03em;
   color: #212121;
 }
-
 
 .modal__name,
 .modal__tel,
@@ -338,9 +333,6 @@ modal
   background-color: #188ce8;
 }
 
-
-
-
 /*==============
 header
 =================*/
@@ -353,8 +345,6 @@ header .container {
   display: flex;
   align-items: center;
 }
-
-
 
 /*=============
 logo
@@ -384,7 +374,6 @@ navigation
 .site-nav {
   margin-right: 285px;
 }
-
 
 .site-nav__item .current {
   color: var(--link-color);
@@ -478,9 +467,6 @@ navigation
   fill: currentColor;
 }
 
-
-
-
 /*
 ===============
 fist section
@@ -542,8 +528,6 @@ fist section
   background-color: #188ce8;
 }
 
-
-
 /*
 ===============
 second section
@@ -563,7 +547,7 @@ second section
   margin-right: 0;
 }
 
-.specials-section__title{
+.specials-section__title {
   display: none;
 }
 
@@ -604,11 +588,9 @@ third section
 ===============
 */
 
-
 .services-section__title {
   margin-bottom: 50px;
 }
-
 
 .services-section {
   padding-top: 47px;
@@ -660,8 +642,6 @@ third section
   padding-right: 0;
 }
 
-
-
 /*
 ===============
 fourth section
@@ -674,7 +654,6 @@ fourth section
   display: flex;
 }
 
-
 .team-section__item:last-child {
   padding-right: 0;
 }
@@ -682,7 +661,6 @@ fourth section
 .team-section__title {
   margin-bottom: 50px;
 }
-
 
 .team-section__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -738,7 +716,6 @@ fourth section
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .socials__icon {
   fill: currentColor;
 }
@@ -753,13 +730,11 @@ fourth section
   color: #ffffff;
 }
 
-
 /*
 ===============
 fifth section
 ===============
 */
-
 
 .customers-section__title {
   margin-bottom: 50px;
@@ -778,7 +753,7 @@ fifth section
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  color:#afb1b8;
+  color: #afb1b8;
 }
 
 .customers-section__item {
@@ -788,7 +763,6 @@ fifth section
 .customers-section__item:last-child {
   margin-right: 0;
 }
-
 
 .customers-section__icon {
   fill: currentColor;
@@ -812,8 +786,6 @@ fifth section
 footer
 ==========
 */
-
-
 
 footer {
   padding-top: 60px;
@@ -885,7 +857,6 @@ footer {
   color: var(--link-color);
 }
 
-
 .socials-footer__subtitle {
   font-weight: 700;
   font-size: 14px;
@@ -900,7 +871,6 @@ footer {
   display: flex;
   align-items: baseline;
 }
-
 
 .socials-footer__item {
   display: inline-block;
@@ -942,8 +912,6 @@ footer {
 .socials-footer__link:focus .socials-footer__icon {
   color: var(--main-color);
 }
-
-
 
 .subscription__subtitle {
   font-weight: 700;
@@ -990,20 +958,9 @@ footer {
   letter-spacing: 0.03em;
 }
 
-.sub {
-  padding-right: 10px;
-}
-.subscription ul li {
+.subscription__item {
   display: inline-block;
 }
-
-.subscription ul {
-  maegin-right: 12px;
-}
-
-
-
-
 
 /*
 ============
@@ -1011,35 +968,35 @@ PORTFOLIO
 ============
 */
 
-.projects {
+.projects__title {
   display: none;
 }
 
-.buttons {
+.project__list-buttons {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.buttons li {
+.project__item-buttons {
   margin-right: 8px;
 }
-.buttons li:last-child {
+.project__item-buttons:last-child {
   margin-right: 0;
 }
 
-.portfolio-images {
+.projects__cards {
   flex-wrap: wrap;
   display: flex;
 }
 
-.portfolio-images-text {
+.projects__textbox {
   padding-top: 20px;
   padding-left: 24px;
   padding-bottom: 20px;
 }
 
-.portfolio-images div {
+.projects__textbox {
   background: #ffffff;
   box-sizing: border-box;
   border-bottom: 1px solid #eeeeee;
@@ -1047,35 +1004,33 @@ PORTFOLIO
   border-right: 1px solid #eeeeee;
 }
 
-div .portfolio-images li {
+.projects__item {
   margin-right: 30px;
   margin-bottom: 30px;
-}
-.portfolio-images li {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-images li:hover,
-.portfolio-images li:focus {
+.projects__item:hover,
+.projects__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-images li:nth-child(3n) {
+.projects__item:nth-child(3n) {
   margin-right: 0;
 }
 
-.portfolio-images li:nth-last-child(-n + 3) {
+.projects__item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.overlay-image-portfolio p {
+.projects__overlay-text {
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.overlay-image-portfolio {
+.projects__overlay {
   position: relative;
   width: 370px;
   height: 294px;
@@ -1084,13 +1039,13 @@ div .portfolio-images li {
   overflow: hidden;
 }
 
-.overlay-image-portfolio:hover p {
+.projects__overlay:hover .projects__overlay-text {
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(0);
   opacity: 1;
 }
 
-.overlay-image-portfolio p {
+.projects__overlay-text {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1109,11 +1064,7 @@ div .portfolio-images li {
   transform: translatey(100%);
 }
 
-.button-all,
-.button-site,
-.button-app,
-.button-design,
-.button-marketing {
+.project__button {
   background: #f5f4fa;
   border-radius: 4px;
   font-weight: 500;
@@ -1132,29 +1083,13 @@ div .portfolio-images li {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-app:hover,
-.button-all:hover,
-.button-site:hover,
-.button-design:hover,
-.button-marketing:hover,
-.button-app:focus,
-.button-all:focus,
-.button-site:focus,
-.button-design:focus,
-.button-marketing:focus {
+.project__button:hover,
+.project__button:focus {
   background-color: var(--link-color);
   color: var(--main-color);
 }
 
-.project-one,
-.project-two,
-.project-three,
-.project-four,
-.project-five,
-.project-six,
-.project-seven,
-.project-eight,
-.project-nine {
+.projects__name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -1162,15 +1097,7 @@ div .portfolio-images li {
   color: var(--title-color);
 }
 
-.project-one-text,
-.project-two-text,
-.project-three-text,
-.project-four-text,
-.project-five-text,
-.project-six-text,
-.project-seven-text,
-.project-eight-text,
-.project-nine-text {
+.projects__text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
