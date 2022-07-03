@@ -1,12 +1,10 @@
 .socials {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding-bottom: 30px;
-  }
-  
-  .socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 30px;
+  &__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,17 +17,17 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
-  .socials__icon {
+  &__icon {
     fill: currentColor;
   }
-  
-  .socials__link:hover,
-  .socials__link:focus {
-    background-color: var(--link-color);
-  }
-  
-  .socials__link:hover svg,
-  .socials__link:focus svg {
-    color: var(--main-color);
-  }
+}
+
+.socials__link:hover,
+.socials__link:focus {
+  background-color: var(--link-color);
+}
+
+.socials__link:hover svg,
+.socials__link:focus svg {
+  color: var(--main-color);
+}

@@ -1,4 +1,5 @@
-.customers-section__title {
+.customers-section {
+  &__title {
     margin-bottom: 50px;
   }
   .customers-section__list {
@@ -6,8 +7,7 @@
     align-items: center;
     justify-content: center;
   }
-  
-  .customers-section__link {
+  &__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,28 +17,29 @@
     height: 92px;
     color: var(--socials-link-color);
   }
-  
-  .customers-section__item {
+
+  &__item {
     margin-right: 30px;
   }
-  
-  .customers-section__item:last-child {
-    margin-right: 0;
-  }
-  
-  .customers-section__icon {
-    fill: currentColor;
-    transition-property: color, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .customers-section__link:hover,
-  .customers-section__link:focus {
-    border: 1px solid var(--link-color);
-  }
-  
-  .customers-section__link:hover .customers-section__icon,
-  .customers-section__link:focus .customers-section__icon {
-    color: var(--link-color);
-  }
+}
+
+.customers-section__item:last-child {
+  margin-right: 0;
+}
+
+.customers-section__icon {
+  fill: currentColor;
+  transition-property: color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers-section__link:hover,
+.customers-section__link:focus {
+  border: 1px solid var(--link-color);
+}
+
+.customers-section__link:hover .customers-section__icon,
+.customers-section__link:focus .customers-section__icon {
+  color: var(--link-color);
+}

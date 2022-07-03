@@ -1,27 +1,25 @@
 footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    display: flex;
-    background-color: var(--footer-hero-background-color);
-  }
-  
-  .info-block {
-    margin-right: 70px;
-  }
-  
-  .info-block__address {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  background-color: var(--footer-hero-background-color);
+}
+
+.footer_container {
+  display: flex;
+  align-items: baseline;
+}
+
+.info-block {
+  margin-right: 70px;
+  &__address {
     margin-top: 20px;
   }
-  
-  .info-block__item {
+
+  &__item {
     margin-bottom: 9px;
   }
-  
-  .info-block__item:last-child {
-    margin-bottom: 0;
-  }
-  
-  .info-block__logo {
+  &__logo {
     text-decoration: none;
     font-family: "Raleway";
     font-weight: 700;
@@ -29,15 +27,7 @@ footer {
     line-height: 1.19;
     letter-spacing: 0.03em;
   }
-  
-  .logo-footer__one {
-    color: var(--link-color);
-  }
-  .logo-footer__two {
-    color: var(--main-color);
-  }
-  
-  .info-block__link {
+  &__link {
     text-decoration: none;
     font-size: 14px;
     line-height: 1.71px;
@@ -49,8 +39,7 @@ footer {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
-  .info-block__street {
+  &__street {
     text-decoration: none;
     font-size: 14px;
     line-height: 1.71;
@@ -61,14 +50,29 @@ footer {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .info-block__link:hover,
-  .info-block__street:hover,
-  .info-block__link:focus,
-  .info-block__street:focus {
-    color: var(--link-color);
-  }
-  
-  .socials-footer__subtitle {
+}
+
+.info-block__item:last-child {
+  margin-bottom: 0;
+}
+
+.logo-footer__one {
+  color: var(--link-color);
+}
+.logo-footer__two {
+  color: var(--main-color);
+}
+
+.info-block__link:hover,
+.info-block__street:hover,
+.info-block__link:focus,
+.info-block__street:focus {
+  color: var(--link-color);
+}
+
+.socials-footer {
+  margin-right: 93px;
+  &__subtitle {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.143;
@@ -77,26 +81,11 @@ footer {
     color: var(--main-color);
     margin-bottom: 20px;
   }
-  
-  .footer_container {
-    display: flex;
-    align-items: baseline;
-  }
-  
-  .socials-footer__item {
+  &__item {
     display: inline-block;
     margin-right: 10px;
   }
-  
-  .socials-footer__item:last-child {
-    margin-right: 0;
-  }
-  
-  .socials-footer {
-    margin-right: 93px;
-  }
-  
-  .socials-footer__link {
+  &__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,22 +98,27 @@ footer {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
-  .socials-footer__icon {
+  &__icon {
     fill: currentColor;
   }
-  
-  .socials-footer__link:hover,
-  .socials-footer__link:focus {
-    background-color: var(--link-color);
-  }
-  
-  .isocials-footer__link:hover .socials-footer__icon,
-  .socials-footer__link:focus .socials-footer__icon {
-    color: var(--main-color);
-  }
-  
-  .subscription__subtitle {
+}
+
+.socials-footer__item:last-child {
+  margin-right: 0;
+}
+
+.socials-footer__link:hover,
+.socials-footer__link:focus {
+  background-color: var(--link-color);
+}
+
+.isocials-footer__link:hover .socials-footer__icon,
+.socials-footer__link:focus .socials-footer__icon {
+  color: var(--main-color);
+}
+
+.subscription {
+  &__subtitle {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.143;
@@ -133,8 +127,7 @@ footer {
     color: var(--main-color);
     margin-bottom: 20px;
   }
-  
-  .subscription__button {
+  &__button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -153,8 +146,7 @@ footer {
     appearance: none;
     cursor: pointer;
   }
-  
-  .subscription__input {
+  &__input {
     width: 358px;
     height: 50px;
     background-color: transparent;
@@ -168,7 +160,11 @@ footer {
     line-height: 1.71;
     letter-spacing: 0.03em;
   }
-  
-  .subscription__item {
+  &__item {
     display: inline-block;
   }
+}
+
+.sub {
+  padding-right: 10px;
+}
