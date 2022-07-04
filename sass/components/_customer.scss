@@ -16,27 +16,24 @@
     width: 170px;
     height: 92px;
     color: var(--socials-link-color);
+    &:hover,
+    &:focus {
+      border: 1px solid var(--link-color);
+    }
   }
 
   &__item {
     margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
-}
-
-.customers-section__item:last-child {
-  margin-right: 0;
-}
-
-.customers-section__icon {
-  fill: currentColor;
-  transition-property: color, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.customers-section__link:hover,
-.customers-section__link:focus {
-  border: 1px solid var(--link-color);
+  &__icon {
+    fill: currentColor;
+    transition-property: color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .customers-section__link:hover .customers-section__icon,

@@ -1,11 +1,9 @@
 header {
     border-bottom: 1px solid var(--border-bottom-color);
-  }
-  
-  header .container {
+.container {
     display: flex;
     align-items: center;
-  }
+  }}
 
   .site-nav {
     margin-right: 285px;
@@ -21,9 +19,16 @@ header {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding-top: 32px;
     padding-bottom: 32px;
-  }
+    &:hover,
+    &:focus {
+    color: var(--link-color);
+  }}
+
   &__item {
     padding-right: 50px;
+    &:last-child {
+      padding-right: 0;
+    }
   }
 }
   
@@ -51,10 +56,7 @@ header {
   }
   
   
-  .site-nav__item:last-child {
-    padding-right: 0;
-  }
-  
+
   .contact-inf{
   &__link {
     padding-top: 32px;
@@ -71,31 +73,23 @@ header {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+    &:hover,
+    &:focus {
+    color: var(--link-color);
+  }}
   &__icon {
     margin-right: 10px;
     fill: currentColor;}
   &__list {
       padding-right: 50px;
+  &:last-child {
+        padding-right: 0;
+      }
     }
 }
   
- 
-  
-  .contact-inf__list:last-child {
-    padding-right: 0;
-  }
-  
-  .site-nav__link:hover,
-  .site-nav__link:focus {
-    color: var(--link-color);
-  }
-  
 
 
-  .contact-inf__link:hover,
-  .contact-inf__link:focus {
-    color: var(--link-color);
-  }
+
   
  

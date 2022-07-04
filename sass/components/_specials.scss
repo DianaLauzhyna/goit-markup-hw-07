@@ -3,6 +3,9 @@
   &__item {
     width: 270px;
     margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
   &__title {
     display: none;
@@ -36,6 +39,4 @@
   }
 }
 
-.specials-section__item:last-child {
-  margin-right: 0;
-}
+

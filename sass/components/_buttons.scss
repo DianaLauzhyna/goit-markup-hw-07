@@ -41,14 +41,15 @@
     letter-spacing: 0.03em;
     color: var(--text-color);
   }
-}
-
-.projects__button:hover,
-.projects__button:focus {
+&__button {  
+&:hover,
+&:focus {
   background-color: var(--link-color);
   color: var(--main-color);
-}
+}}
 
-.projects__item-buttons:last-child {
+&__item-buttons
+{&:last-child {
   margin-right: 0;
+}}
 }
